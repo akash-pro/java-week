@@ -1,0 +1,17 @@
+public class escape
+{
+  public static void main(String args[])
+  {              
+    
+    System.out.println("abc\ndef");    // abc and def are given in two lines
+ 
+    System.out.println("ab\bcd");      // prints acd
+    System.out.println("ab \bcd");     // the space before \b is gone
+    System.out.println("abcdefghij");  // gives 3 spaces between ab and cd
+    System.out.println("ab\tcd");      // gives 3 spaces between ab and cd
+ 
+    System.out.println("a\"bc\"d");    // prints a"bc"d 
+ 
+    System.out.println("a\'bc\'d");    // prints a'bc'd 
+  }
+}
