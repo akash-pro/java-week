@@ -1,0 +1,143 @@
+#Practice 1 
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Print output to STDOUT. Your class should be named Solution. */
+    System.out.println("Hello, World.");
+System.out.println("Hello, Java.");
+}
+}
+
+Sample Output
+Hello, World.
+Hello, Java.
+
+
+#Practice 2 
+
+Stdin and Stdout
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int a=sc.nextInt();
+      int b=sc.nextInt();
+      int c=sc.nextInt();
+    
+      System.out.println(a);
+       System.out.println(b);
+        System.out.println(c);
+     
+    }
+}
+
+Sample Input
+
+42
+100
+125
+Sample Output
+
+42
+100
+125
+
+
+#Practice 3
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        try{
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int N=Integer.parseInt(br.readLine().trim());
+        if(N<1||N>100)
+            throw new Exception();
+        if((N&1)==1)
+        {
+            System.out.println("Weird");
+        }
+        else
+        {
+            if(N>=2&&N<=5)
+            {
+                System.out.println("Not Weird");
+            }
+            else if(N>=6&&N<=20)
+            {
+                System.out.println("Weird");
+            }
+            else
+            {
+                System.out.println("Not Weird");
+            }
+        }
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+}
+
+Sample Input 0
+
+3
+Sample Output 0
+
+Weird
+Sample Input 1
+
+24
+Sample Output 1
+
+Not Weird
+
+
+#Practice 4
+
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+
+        int i=sc.nextInt();
+        sc.nextLine();
+        Double d=sc.nextDouble();
+        sc.nextLine();
+        String s=sc.nextLine();
+        // Write your code here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+    }
+}
+
+Sample Input
+
+42
+3.1415
+Welcome to HackerRank's Java tutorials!
+Sample Output
+
+String: Welcome to HackerRank's Java tutorials!
+Double: 3.1415
+Int: 42
+
+
+
+ 
